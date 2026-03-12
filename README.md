@@ -48,7 +48,7 @@ If no `invite_url` is provided, the page now tells the operator to use a user-su
 ## Copyable Share Text
 
 ```text
-請依照這份文檔引導客戶完成 Tailscale 遠端支援加入流程，並優先自主探測與自主執行；如果我有附帶邀請連結就直接使用，如果沒有附帶就先向我索取邀請連結，再繼續下一步：https://raw.githubusercontent.com/qoli/tailscale-onboarding-workers/refs/heads/main/REMOTE_SUPPORT_TAILSCALE_ONBOARDING.md
+請依照這份文檔引導客戶完成 Tailscale 遠端支援加入流程，並優先自主探測、自主執行、主動驗證完成狀態與主動排查網路問題；特別注意如果客戶登入後看不到顧問設備，要優先判斷是否進入了錯的 tailnet，必要時引導客戶登出並重新登入正確網絡；如果我有附帶邀請連結就直接使用，如果沒有附帶就先向我索取邀請連結，再繼續下一步：https://raw.githubusercontent.com/qoli/tailscale-onboarding-workers/refs/heads/main/REMOTE_SUPPORT_TAILSCALE_ONBOARDING.md
 ```
 
 ## Direct Codex Instruction
@@ -61,6 +61,9 @@ If no `invite_url` is provided, the page now tells the operator to use a user-su
 - 如果我沒有附帶邀請連結，先向我索取邀請連結，再繼續
 - 優先自主探測、自主打開頁面、自主檢查狀態，不要先詢問我
 - 只有在你無法從現有上下文、瀏覽器或管理端自行取得必要資訊時，才向我提問
+- 完成前必須自行驗證使用者、設備、連通性與顧問端可用性，不要只依賴客戶口頭回報
+- 如果發現 Tailscale 或網路連通問題，先主動排查 approval、ACL、Shields Up、防火牆、DERP、UDP/NAT 與 daemon/app 狀態
+- 如果客戶登入後看不到顧問設備，優先懷疑登入到錯的 tailnet，必要時要求客戶登出並重新登入正確網絡
 - 一次只做一步，等待回覆後再進下一步
 - 不要要求我貼出密碼、驗證碼、token 或其他可重用授權資訊
 ```
