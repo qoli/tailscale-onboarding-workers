@@ -44,3 +44,21 @@ https://<worker-host>/?invite_url=https://login.tailscale.com/uinv/...&format=md
 ```
 
 If no `invite_url` is provided, the page now tells the operator to use a user-supplied invite link or ask the user for one before continuing.
+
+## Copyable Share Text
+
+```text
+請依照這份文檔引導客戶完成 Tailscale 遠端支援加入流程；如果我有附帶邀請連結就直接使用，如果沒有附帶就先向我索取邀請連結，再繼續下一步：https://raw.githubusercontent.com/qoli/tailscale-onboarding-workers/refs/heads/main/REMOTE_SUPPORT_TAILSCALE_ONBOARDING.md
+```
+
+## Direct Codex Instruction
+
+```text
+閱讀這份文檔，並嚴格依照文檔流程執行 Tailscale onboarding：https://raw.githubusercontent.com/qoli/tailscale-onboarding-workers/refs/heads/main/REMOTE_SUPPORT_TAILSCALE_ONBOARDING.md
+
+執行規則：
+- 如果我已附帶邀請連結，直接使用該連結
+- 如果我沒有附帶邀請連結，先向我索取邀請連結，再繼續
+- 一次只做一步，等待回覆後再進下一步
+- 不要要求我貼出密碼、驗證碼、token 或其他可重用授權資訊
+```
